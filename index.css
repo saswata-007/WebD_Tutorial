@@ -1,0 +1,95 @@
+.html>a {
+    text-decoration: none;
+    background-color: orange;
+    color: black;
+    margin: 2px;
+    padding: 2px;
+}
+#left{
+    display: inline-block;
+    text-align: left;
+    text-decoration: underline;
+    font-weight: bolder;
+    background-color: orange;
+    color: black;
+    margin: 2px;
+    padding: 2px;
+}
+#center{
+    display: block;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: cyan;
+    color: black;
+    margin: 2px;
+    padding: 2px;
+}
+#right{
+    display: inline-block;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: yellow;
+    color: black;
+    margin: 2px;
+    padding: 2px;
+}
+
+.html>a:hover {
+    background-color: black;
+    color: orange;
+}
+
+.css>a {
+    text-decoration: none;
+    background-color: cyan;
+    color: black;
+    display: inline-block;
+    margin: 2px;
+    padding: 2px;
+}
+
+.css>a:hover {
+    background-color: black;
+    color: cyan;
+}
+
+.js>a {
+    text-decoration: none;
+    background-color: yellow;
+    color: black;
+    margin: 2px;
+    padding: 2px;
+}
+
+.js>a:hover {
+    background-color: black;
+    color: yellow;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    background-color: aqua;
+    color: darkslategrey;
+    margin: 4px;
+    padding: 4px;
+}
+.htmlContainer{
+    display: block;
+    text-align: left;
+}
+.cssContainer{
+    display: block;
+    text-align: center;
+}
+.jsContainer{
+    display: block;
+    text-align: right;
+}

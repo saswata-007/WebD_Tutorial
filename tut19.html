@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(247, 186, 117);
+        }
+        .container{
+            background-color: bisque;
+            border: 2px solid rgb(153, 61, 61);
+            /*padding: 20px; 
+            we can also set left-right-top-bottom padding and margin
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20PX;*/
+            /*padding: 20px 30px 40px 50px; /* padding: top right bottom left (trbl) */ 
+            padding: 34px 20px;/*padding: y(top/bottom) x(left/right);*/
+            margin: 34px;
+            border-radius: 23px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is a heading</h3>
+        <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere possimus dicta eos voluptatem quisquam nesciunt quas beatae id magnam laborum voluptates inventore placeat, perspiciatis, veritatis, ipsa expedita sed? Commodi laudantium maxime sit at vel praesentium repellendus eos nihil a mollitia magni voluptates sapiente ab ut fugit doloribus, aliquam odit ullam!</p>
+    </div><br>
+
+    <div class="container">
+        <h3>this is a heading</h3>
+        <p id="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere possimus dicta eos voluptatem quisquam nesciunt quas beatae id magnam laborum voluptates inventore placeat, perspiciatis, veritatis, ipsa expedita sed? Commodi laudantium maxime sit at vel praesentium repellendus eos nihil a mollitia magni voluptates sapiente ab ut fugit doloribus, aliquam odit ullam!</p>
+    </div><br>
+
+    <div class="container">
+        <h3>this is a heading</h3>
+        <p id="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere possimus dicta eos voluptatem quisquam nesciunt quas beatae id magnam laborum voluptates inventore placeat, perspiciatis, veritatis, ipsa expedita sed? Commodi laudantium maxime sit at vel praesentium repellendus eos nihil a mollitia magni voluptates sapiente ab ut fugit doloribus, aliquam odit ullam!</p>
+    </div><br>
+
+</body>
+</html>

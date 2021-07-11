@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in JavaScript</title>
+    <style>
+        body{
+            background-color: black;
+            color: wheat;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+
+        <div id="content"></div>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi esse illo cum sunt explicabo, cupiditate aliquid. Ipsam asperiores magni aspernatur nulla voluptate praesentium omnis rerum, vel ullam adipisci modi quo voluptas nostrum, architecto deserunt.</p>
+    </div>
+    <script>
+        var string = "This is a string";
+        var name = "Saswata";
+        var name2 = 'Kankana';        
+        var channel = "CN"; 
+        var temp = `${name} is a nice person he loves ${name2}`;
+        
+        console.log(string , name , name2);
+        console.log(temp);
+
+        var len = name.length;
+        console.log(`length of name is ${len}`)
+
+        console.log("Hello World\nSaswata\tSaswata\b")
+
+        var x = new String("This");
+        console.log(x);
+
+        document.getElementById('content').innerHTML = '<h3>this is an H3 heading</h3>'
+    </script>
+</body>
+</html>

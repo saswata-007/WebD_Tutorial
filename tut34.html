@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes & Animations</title>
+    <style>
+        .container {
+            background-color: greenyellow;
+        }
+
+        .box {
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /*animation-name: saswata1;*/
+            animation-name: saswata2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in-out;
+            /*animation-delay: 2s;*/
+            animation-direction: reverse;
+            /*shorthand property of animation--------*/
+            /*animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode */
+            /*animation: saswata3 2s ease-in-out 0.1ms infinite alternate;*/
+        }
+        @keyframes saswata2{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            50%{
+                top: 250px;
+                left: 250px;
+            }
+            75%{
+                top: 0px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+        @keyframes saswata1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1000px;
+            }
+        }
+        .box2{
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            align-self: center;
+            animation: saswata3 2s ease-in-out 0.1ms infinite alternate;
+        }
+        @keyframes saswata3{
+            0%{
+                top: 0px;
+                right: 0px;
+            }
+            25%{
+                top: 250px;
+                right: 0px;
+            }
+            50%{
+                top: 250px;
+                right: 250px;
+            }
+            75%{
+                top: 0px;
+                right: 250px;
+            }
+            100%{
+                top: 0px;
+                right: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            &#8203;
+        </div>
+        <div class="box2">
+        &#8203;
+    </div>
+</body>
+</html>

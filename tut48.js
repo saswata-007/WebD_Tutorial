@@ -6,7 +6,7 @@ let myvar5 = undefined;
 
 let employee = {
     name: "Saswata",
-    salary: 100000,
+    salary: 50000,
     occupation: "student",
     country: "India", 
     "my state": "West Bengal", 

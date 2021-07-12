@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=`">
+    <title>Home</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        header h1 {
+            text-align: center;
+            font-size: 40px;
+            color: white;
+        }
+        
+        header {
+            padding: 40px;
+            background-image: url(kankana/1.jpg);
+        }
+        
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        nav a {
+            text-decoration: none;
+            padding: 20px;
+            text-align: center;
+            float: left;
+            color: white;
+        }
+        
+        main {
+            background-image: url(kankana/1.jpg);
+            background-size: 500px;
+            background-attachment: fixed;
+            background-repeat: repeat;
+            text-align: center;
+        }
+        
+        h2 {
+            padding: 20px;
+        }
+        
+        section:nth-child(even) {
+            background-image: url(jihyo_background.jpg);
+            background-size: 1000px;
+            background-attachment: fixed;
+            background-repeat: repeat;
+        }
+        
+        section {
+            min-height: 100vh;
+        }
+        
+        video {
+            padding: 10px;
+        }
+        
+        iframe {
+            height: 75vh;
+        }
+        
+        img {
+            padding: 10px;
+        }
+        
+        section h5 {
+            margin: 40px;
+        }
+        
+        footer {
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        footer a {
+            text-decoration: none;
+            padding: 20px;
+            text-align: center;
+            float: left;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Kankana</h1></header>
+    <nav>
+        <a href="a">Home</a>
+        <a href="a">Photos</a>
+        <a href="a">Videos</a>
+        <a href="a">Letters</a>
+    </nav>
+    <main>
+        <section>
+            <h2 class="photo"><a href="a">Photos</a></h2>
+            <img src="kankana/8.jpg" alt="" width="19%">
+            <img src="kankana/2.jpg" alt="" width="19%">
+            <img src="kankana/3.jpg" alt="" width="19%">
+            <img src="kankana/4.jpg" alt="" width="19%">
+            <img src="kankana/7.jpg" alt="" width="19%">
+        </section>
+        <section>
+            <h2 class="photo"><a href="a">Videos</a></h2>
+            <video src="vid/1.mp4" width="33%" controls ></video>
+            <video src="vid/2.mp4" width="33%" controls ></video>
+            <video src="vid/3.mp4" width="33%" controls ></video>
+        </section>
+        <section>
+            <h2 class="photo"><a href="a">Letters</a></h2>
+            <a href="letter/1.pdf"><img src="letter/1.jpg" alt="" width="33%"></a>
+            <a href="letter/2.pdf"><img src="letter/2.jpg" alt="" width="33%"></a>
+            <a href="letter/3.pdf"><img src="letter/3.jpg" alt="" width="33%"></a>
+        </section>
+    </main>
+</body>
+</html>

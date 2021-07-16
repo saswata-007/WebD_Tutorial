@@ -12,4 +12,14 @@ function num(a,b){
     else{
         console.log("A is equal to B");
     }
+}             
+
+console.log(document.getElementById('q2')); //Question 2
+let ageConfirm = prompt(confirm("Are you older than 18?"));
+console.log(ageConfirm);
+if (age>18){
+    console.log("You are allowed to enter in this club");
+}
+else{
+    console.log("You are not allowed to enter in this club.");
 }

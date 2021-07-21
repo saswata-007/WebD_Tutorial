@@ -16,10 +16,10 @@ console.log("The value of Math.SQRT1_2 is", Math.SQRT1_2);
 console.log("The value of Math.SQRT2 is", Math.SQRT2);
 
 // Printing the functions in math object
-let a = 25.54;
-let b = 40;
-console.log(`The value of a and b is ${a} and ${b}`);
-console.log(`The value of a and b rounded is ${Math.round(a)} and ${Math.round(b)}`);
+let num1 = 25.54;
+let num2 = 40;
+console.log(`The value of num1 and num2 is ${num1} and ${num2}`);
+console.log(`The value of num1 and num2 rounded is ${Math.round(num1)} and ${Math.round(num2)}`);
 
 console.log("3 to the powers 2 is", Math.pow(3,2));
 console.log("2 to the powers 10 is", Math.pow(2,10));
@@ -50,3 +50,11 @@ console.log(Math.log(2));
 
 // Generating random numbers
 console.log("The random number is", Math.random());
+
+// Random number b/w (a,b) = a + (b-a)*Math.random()
+// let r1_100 = Math.random();
+let a = 1;
+let b = 100;
+let r1_100 = a + (b-a)*Math.random()
+console.log("The random number is in between 1 to 100 is", r1_100);
+console.log("The random number is in between 1 to 100 is", Math.round(r1_100));

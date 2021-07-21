@@ -30,3 +30,23 @@ console.log("Using sqrt function", Math.sqrt(37));
 // Ceil and Floor
 console.log("5.8 rounded up to nearest integer", Math.ceil(5.8));
 console.log("5.8 rounded down to nearest integer", Math.floor(5.8));
+
+// abs function
+console.log("abosolute value of 5.67", Math.abs(5.6));
+console.log("abosolute value of -5.67", Math.abs(-5.6));
+
+// Trignometric Functions
+console.log("This value of sin(pi) is", Math.sin(Math.PI));
+console.log("This value of sin(pi) is", Math.sin(Math.PI/2));
+console.log("This value of cos(pi) is", Math.cos(Math.PI/2));
+console.log("This value of tan(pi) is", Math.tan(Math.PI/2));
+
+// Min & Max
+console.log("Minimum Value of 4, 10, 100 is", Math.min(4,10,100));
+console.log("Maximum Value of 4, 10, 100 is", Math.max(4,10,100));
+
+// Log function
+console.log(Math.log(2));
+
+// Generating random numbers
+console.log("The random number is", Math.random());

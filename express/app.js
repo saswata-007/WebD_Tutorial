@@ -15,7 +15,7 @@ app.set('views', path.join(__dirname, 'views'));
 // Our pug demo endpoint
 app.get("/demo",(req, res)=>{
     res.status(200).render('demo',{title:'hey saswata', message: 'hello there, how are you'});
-
+});
 app.get("/",(req, res)=>{
     res.status(200).send("This is my homepage of first express app.");
 });
@@ -38,4 +38,4 @@ app.get("/contact",(req, res)=>{
 
 app.listen(port,()=>{
     console.log(`The application started successfully on port ${port}`);
-})
+});

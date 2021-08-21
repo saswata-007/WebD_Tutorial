@@ -14,12 +14,12 @@ app.set('views', path.join(__dirname, 'views')); // Set the views dirctory
 app.get('/',(req, res)=>{
     const con = "This is the best content on the internet so far so use it wisely."
     const params = {'title': 'PES is the best game', 'content': con}
-    res.status(200).render('index.pug', params)
+    res.status(200).render('index.pug', params);
 });
-// app.post('/', (req,res)=>{
-//     const params = {'message': 'Your form has been submitted sucessfully'}
-//     res.status(200).render('index.pug', params);
-// })
+app.post('/', (req,res)=>{
+    const params = {'message': 'Your form has been submitted sucessfully'}
+    res.status(200).render('index.pug', params);
+});
 
 // Our pug demo endpoint - CWH VIDEO/TUT - 72 MATERIALS
 // app.get("/demo",(req, res)=>{
@@ -44,8 +44,6 @@ app.get('/',(req, res)=>{
 // app.get("/contact",(req, res)=>{
 //     res.status(404).send("Error Code 404: Page Not Found");
 // });
-
-
 
 app.listen(port,()=>{
     console.log(`The application started successfully on port ${port}`);

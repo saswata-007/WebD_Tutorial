@@ -1,13 +1,15 @@
 const express = require("express");
+const fs = require("fs");
 const path = require("path");
 const app = express();
 const port = 80;
 
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static')); // for serving static files
+app.use(express.urlencoded())
 
 // PUG SPECIFIC STUFF
-app.set('view engine', 'pug'); // Set the template engine as pug
+app.set('view engine', 'pug'); // Set    the template engine as pug
 app.set('views', path.join(__dirname, 'views')); // Set the views dirctory
 
 // ENDPOINT
@@ -17,6 +19,24 @@ app.get('/',(req, res)=>{
     res.status(200).render('index.pug', params);
 });
 app.post('/', (req,res)=>{
+    console.log(req.body); 
+    // console.log(req.body.name); 
+    // console.log(req.body.age); 
+    // console.log(req.body.gender); 
+    // console.log(req.body.number); 
+    // console.log(req.body.email); 
+    // console.log(req.body.address); 
+    // console.log(req.body.more); 
+    name = req.body.name
+    age = req.body.age
+    gender = req.body.gender
+    number = req.body.number   
+    email = req.body.email
+    address = req.body.address
+    more = req.body.more
+
+    let outputToWrite = `Name - ${name}, Age - ${age}, Gender - ${gender}, Number - ${number}, Email - ${email}, Address - ${address}, More About Person - ${more}`
+    fs.writeFileSync('output.txt', outputToWrite)
     const params = {'message': 'Your form has been submitted sucessfully'}
     res.status(200).render('index.pug', params);
 });

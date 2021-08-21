@@ -16,6 +16,10 @@ app.get('/',(req, res)=>{
     const params = {'title': 'PES is the best game', 'content': con}
     res.status(200).render('index.pug', params)
 });
+// app.post('/', (req,res)=>{
+//     const params = {'message': 'Your form has been submitted sucessfully'}
+//     res.status(200).render('index.pug', params);
+// })
 
 // Our pug demo endpoint - CWH VIDEO/TUT - 72 MATERIALS
 // app.get("/demo",(req, res)=>{

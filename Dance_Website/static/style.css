@@ -45,27 +45,47 @@
   align-items: center;
   flex-direction: column;
   font-family: "ZCOOL QingKe HuangYou", cursive;
-  font-size: 2.9rem;
+  font-size: 52px;
   background: center / cover no-repeat url("../static/bg.jpg");
-  height: 300px;
+  height: 425px;
   filter: grayscale(70%);
   /* background-color: red; */
 }
 
 #introSection div.small {
   padding-top: 20px;
-  font-size: 30px;
-  word-spacing: 15px;
+  font-size: 40px;
+  word-spacing: 30px;
+}
+
+#missionSection{
+    height: 300px;
+  background-color: #ffffff;
+
+}
+
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 30%;
+    margin: 23px 22px;
+    height: 200px;
+}
+.card h3{
+    text-align: center;
+    margin: 10px;
+    /* font-size: 11px; */
 }
 
 #sponsorSection {
-  background: center / cover no-repeat url("../static/sponsors.jpg");
+  /* background: center / cover no-repeat url("../static/sponsors.jpg"); */
   /* filter: blur(0.2px); */
   height: 300px;
-  /* background-color: rgb(97, 97, 221); */
+  background-color: #fbd6d6c7;
 }
 
-#sponsorSection h2 {
+ h2 {
   text-align: center;
   font-size: 30px;
   padding-top: 23px;

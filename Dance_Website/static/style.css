@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar {
+  padding: 15px 5px;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(235, 54, 54);
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+}
+
+#navbar li a {
+  text-decoration: none;
+  padding: 5px 20px;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.15rem;
+}
+
+#navbar li a:hover {
+  color: black;
+  font-weight: 900;
+  font-size: 1.35rem;
+}
+
+#introSection {
+  padding-bottom: 35px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  font-size: 2.9rem;
+  background: center / cover no-repeat url("../static/bg.jpg");
+  height: 300px;
+  filter: grayscale(70%);
+  /* background-color: red; */
+}
+
+#introSection div.small {
+  padding-top: 20px;
+  font-size: 30px;
+  word-spacing: 15px;
+}
+
+#sponsorSection {
+  background: center / cover no-repeat url("../static/sponsors.jpg");
+  /* filter: blur(0.2px); */
+  height: 300px;
+  /* background-color: rgb(97, 97, 221); */
+}
+
+#sponsorSection h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 23px;
+  color: black;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+#footer {
+  height: 100px;
+  background-color: black;
+  color: white;
+}
